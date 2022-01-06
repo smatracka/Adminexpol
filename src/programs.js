@@ -616,6 +616,24 @@ function Explorer(address) {
 	});
 	return new Task($win);
 }
+function Works(address) {
+	// TODO: DRY the default file names and title code (use document.title of the page in the iframe, in make_iframe_window)
+	var document_title = 'Co robimy?';
+	var win_title = document_title;
+	// TODO: focus existing window if folder is currently open
+	var $win = make_iframe_window({
+		src: "programs/works/index.html" + (address ? ("?address=" + encodeURIComponent(address)) : ""),
+		icons: iconsAtTwoSizes("folder-open"),
+		title: 'Co robimy?',
+		// this is based on one measurement, but it uses different sizes depending on the screen resolution,
+		// and may be different for different Explorer window types (Microsoft Internet Explorer, "Exploring", normal Windows Explorer*),
+		// and may store the window positions, even for different types or folders, so I might have a non-standard default size measurement.
+		// *See different types (resized for posing this screenshot): https://imgur.com/nxAcT9C
+		innerWidth: Math.min(856, innerWidth * 0.9),
+		innerHeight: Math.min(547, innerHeight * 0.7),
+	});
+	return new Task($win);
+}
 Explorer.acceptsFilePaths = true;
 
 var webamp_bundle_loaded = false;
@@ -1164,6 +1182,18 @@ function systemExecuteFile(file_path) {
 	});
 }
 
+// ADMINEXPOL PAGES
+// function Works() {
+// 	var $win = make_iframe_window({
+// 		src: "programs/works/index.html",
+// 		icons: iconsAtTwoSizes("folder"),
+// 		title: "Co robimy",
+// 		innerWidth: 280,
+// 		innerHeight: 320 + 21,
+// 		resizable: false,
+// 	});
+// 	return new Task($win);
+// }
 // TODO: base all the desktop icons off of the filesystem
 // Note: `C:\Windows\Desktop` doesn't contain My Computer, My Documents, Network Neighborhood, Recycle Bin, or Internet Explorer,
 // or Connect to the Internet, or Setup MSN Internet Access,
@@ -1282,6 +1312,13 @@ add_icon_not_via_filesystem({
 	open: Pinball,
 	shortcut: true
 });
+add_icon_not_via_filesystem({
+	title: "Co robimy?",
+	iconID: "internet-explorer",
+	open: Works,
+	// open: function () { Works("https://www.onet.com/"); }
+});
+
 
 folder_view.arrange_icons();
 
