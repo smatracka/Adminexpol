@@ -259,7 +259,8 @@ button {
 
 .works-main {
 	align-items: center;
-	background: #0000CC;
+	background-image: url("/images/microfab.jpg");
+	/*background: #0000CC;*/
 }
 .works-text {
 	color: #FFFFFF !important;
