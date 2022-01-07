@@ -260,6 +260,7 @@ button {
 .works-main {
 	align-items: center;
 	background-image: url("/images/microfab.jpg");
+	overflow: scroll;
 	/*background: #0000CC;*/
 }
 .works-text {
