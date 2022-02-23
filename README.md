@@ -1,5 +1,5 @@
 
-# ![](images/icons/windows-update-32x32.png) [98.js](https://98.js.org)
+# ![](images/icons/windows-update-32x32.png) [Adminexpol '98](https://adminexpol.pl)
 
 A web based Windows 98 desktop remake.
 
@@ -28,46 +28,11 @@ Features:
 
 ## Try it out
 
-[ ＥＮＴＥＲ　![](images/icons/windows-update-16x16.png)　ＷＩＮＤＯＷＳ　９８　体験へようこそ](https://98.js.org/)
-
-[![](images/3d.jpg)](https://98.js.org/)
-
-## License
-
-Not yet licensed.
-This project is currently [source-available / shared source](https://en.wikipedia.org/wiki/Source-available_software), but not [open source](https://en.wikipedia.org/wiki/Open-source_software).
-
 ## Related Projects
 
 Apps that it would be nice to integrate:
 * [![](images/icons/settings-16x16.png) Windows Classic theme designer](https://github.com/tpenguinltg/winclassic)
 * [![](images/icons/media-player-16x16.png) Win95 Media Player](https://benwiley4000.github.io/win95-media-player/)
-
-Other online operating systems / web desktops:
-
-| Name & Link                                                                                           | Vague Description                | Repo & License                                                                                                                                         | Chat                                    |
-|-------------------------------------------------------------------------------------------------------|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|
-| [![](images/start.png)&nbsp;Rahul.io](https://rahul.io/)                                              | another Windows 98 remake        | [repo here](https://github.com/lolstring/window98-html-css-js) - MIT license                                                                           |                                         |
-| [![](images/icons/windows-93-16x16.png)&nbsp;Windows&nbsp;93](https://www.windows93.net/)             | a "fictional version of Windows" | (not open source currently)                                                                                                                            | [Discord](https://discord.gg/vAmMu7q)   |
-| [🏡 ZineOS](https://whimsy.space/)                                                                     | emojis everywhere                | [repo here](https://github.com/STRd6/zine) - MIT license                                                                                               | [Discord](https://discord.gg/tUj4zYA)   |
-| [![](images/icons/emuos-16x16.png)&nbsp;EmuOS](https://emupedia.net/beta/emuos/)                      | emulator-focused Win9X desktop   | [repo here](https://github.com/Emupedia/emupedia.github.io) - shared source                                                                            | [Discord](https://discord.gg/5u4VR9v)   |
-| [![](images/icons/os-js-16x16.png)&nbsp;OS.js](https://www.os-js.org/)                                | a more serious web desktop       | [repo here](https://github.com/os-js/OS.js) - simplified BSD license                                                                                   | [Gitter](https://gitter.im/os-js/OS.js) |
-| [![](images/icons/friend-16x16.png)&nbsp;Friend](https://friendup.cloud/)                             | another serious one              | [repo here](https://github.com/FriendUPCloud/friendup) - different licenses for different [parts](https://github.com/FriendUPCloud/friendup#licensing) |                                         |
-| [![](images/icons/clouddesk-16x16.png)&nbsp;CloudDesk](http://altaica.altervista.org/)                | another serious one              | (explicitly not open source)                                                                                                                           |                                         |
-| [![](images/icons/aaronos-16x16.png)&nbsp;AaronOS](https://aaronos.dev/AaronOS/aosBeta.php)           | interesting aesthetic            | [repo here](https://github.com/MineAndCraft12/AaronOS) - shared source                                                                                 | [Discord](https://discord.gg/eWDac7E)   |
-| [![](images/icons/webdesktop-16x16.png)&nbsp;Web&nbsp;Desktop](https://webdesktop.net/)               | Windows 10 like "startpage"      |                                                                                                                                                        |                                         |
-| [![](images/icons/system-16x16.png)&nbsp;System](https://system-developer-beta.000webhostapp.com/)    | Windows 10 like thing            |                                                                                                                                                        |                                         |
-| [![](images/icons/winxp-doge-16x16.png)&nbsp;WinXP](https://winxp.now.sh/)                            | Windows XP                       | [repo here](https://github.com/ShizukuIchi/winXP/) - MIT license                                                                                       |                                         |
-| [Windows 98 - Packard Belle](https://packard-belle.netlify.com/)                                      | Windows 98                       | [repo here](https://github.com/padraigfl/packard-belle-desktop) - shared source                                                                        |                                         |
-| [X-WebDesktop-Vue](http://47.93.49.248/X-WebDesktop-Vue/)                                             | Windows 7                        | [repo here](https://github.com/OXOYO/X-WebDesktop-Vue) - MIT license                                                                                   |                                         |
-| [![](images/icons/vue-win3.1-16x16.png)&nbsp;vue win3.1](https://disjfa.github.io/vue-win-3.1/)       | Windows 3.1                      | [repo here](https://github.com/disjfa/vue-win-3.1) - shared source                                                                                     |                                         |
-| [![](images/icons/virtualdesktop.org-16x16.png)&nbsp;VirtualDesktop](http://virtualdesktop.org/)      | Screenshot flows, several OSes   |                                                                                                                                                        |                                         |
-| [GUIdebook](https://guidebookgallery.org/guis/windows/)                                               | Screenshots, several OSes        |                                                                                                                                                        |                                         |
-
-
-Plus many more [web desktops on Wikipedia](https://en.wikipedia.org/wiki/Web_desktop),
-[awesome-web-desktops](https://github.com/syxanash/awesome-web-desktops),
-and [awesome-OS](https://github.com/zriyans/awesome-OS).
 
 Libraries:
 * [![](images/icons/task-16x16.png) OS-GUI](https://os-gui.js.org), which grew out of this project
@@ -79,9 +44,6 @@ Libraries:
 Also:
 * [Awesome Atwood's Law](https://github.com/captbaritone/awesome-attwoods-law), a curated list of JavaScript reimplementations, similar to [/r/atwoodslaw/](https://www.reddit.com/r/atwoodslaw/)
 
-## Contributing
-
-See [CONTRIBUTING](CONTRIBUTING.md)
 
 ## Development Setup
 
@@ -101,7 +63,3 @@ Note that the metadata file references specific commit hashes, including between
 I'd recommend phrasing commit messages to apply to the subrepo, primarily, rather than the containing project.
 If you so much as edit the commit message for a `git subrepo push`ed commit, you'd have to update the `.gitrepo` metadata file manually,
 OR you could drop the commit you pushed and the `git subrepo push` commit (which updates the metadata) and do `git subrepo pull` instead (which btw gives you an option to rename the commit; and I think renaming that commit would be safe after the fact anyways as long as it's the last commit and not pushed).
-
-## TODO
-
-See [TODO](TODO.md)
