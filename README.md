@@ -3,6 +3,8 @@
 
 A web based Windows 98 desktop remake.
 
+![img_1.png](img_1.png)
+
 Includes:
 * ![](images/icons/notepad-16x16.png) Notepad ([separate README](programs/notepad/README.md))
 * ![](images/icons/speaker-16x16.png) Sound Recorder ([separate README](programs/sound-recorder/README.md))
