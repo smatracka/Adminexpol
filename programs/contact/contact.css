@@ -261,8 +261,22 @@ button {
 	align-items: center;
 	background-image: url("/images/microfab.jpg");
 	overflow: scroll;
+	padding-bottom: 10%;
 	/*background: #0000CC;*/
 }
 .works-text {
 	color: #FFFFFF !important;
+	text-align: center;
+}
+
+.works-container {
+	padding: 5% 10%;
+}
+
+.page-title {
+	margin-top: 5%;
+}
+
+.cta-link {
+	color: red;
 }

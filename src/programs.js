@@ -634,6 +634,64 @@ function Works(address) {
 	});
 	return new Task($win);
 }
+
+function About(address) {
+	// TODO: DRY the default file names and title code (use document.title of the page in the iframe, in make_iframe_window)
+	var document_title = 'Kim jesteśmy?';
+	var win_title = document_title;
+	// TODO: focus existing window if folder is currently open
+	var $win = make_iframe_window({
+		src: "programs/about/index.html" + (address ? ("?address=" + encodeURIComponent(address)) : ""),
+		icons: iconsAtTwoSizes("folder-open"),
+		title: 'Kim jesteśmy?',
+		// this is based on one measurement, but it uses different sizes depending on the screen resolution,
+		// and may be different for different Explorer window types (Microsoft Internet Explorer, "Exploring", normal Windows Explorer*),
+		// and may store the window positions, even for different types or folders, so I might have a non-standard default size measurement.
+		// *See different types (resized for posing this screenshot): https://imgur.com/nxAcT9C
+		innerWidth: Math.min(856, innerWidth * 0.9),
+		innerHeight: Math.min(547, innerHeight * 0.7),
+	});
+	return new Task($win);
+}
+
+function Pricing(address) {
+	// TODO: DRY the default file names and title code (use document.title of the page in the iframe, in make_iframe_window)
+	var document_title = 'Cennik';
+	var win_title = document_title;
+	// TODO: focus existing window if folder is currently open
+	var $win = make_iframe_window({
+		src: "programs/pricing/index.html" + (address ? ("?address=" + encodeURIComponent(address)) : ""),
+		icons: iconsAtTwoSizes("folder-open"),
+		title: 'Cennik',
+		// this is based on one measurement, but it uses different sizes depending on the screen resolution,
+		// and may be different for different Explorer window types (Microsoft Internet Explorer, "Exploring", normal Windows Explorer*),
+		// and may store the window positions, even for different types or folders, so I might have a non-standard default size measurement.
+		// *See different types (resized for posing this screenshot): https://imgur.com/nxAcT9C
+		innerWidth: Math.min(856, innerWidth * 0.9),
+		innerHeight: Math.min(547, innerHeight * 0.7),
+	});
+	return new Task($win);
+}
+
+function Contact(address) {
+	// TODO: DRY the default file names and title code (use document.title of the page in the iframe, in make_iframe_window)
+	var document_title = 'Kontakt';
+	var win_title = document_title;
+	// TODO: focus existing window if folder is currently open
+	var $win = make_iframe_window({
+		src: "programs/contact/index.html" + (address ? ("?address=" + encodeURIComponent(address)) : ""),
+		icons: iconsAtTwoSizes("folder-open"),
+		title: 'Kontakt',
+		// this is based on one measurement, but it uses different sizes depending on the screen resolution,
+		// and may be different for different Explorer window types (Microsoft Internet Explorer, "Exploring", normal Windows Explorer*),
+		// and may store the window positions, even for different types or folders, so I might have a non-standard default size measurement.
+		// *See different types (resized for posing this screenshot): https://imgur.com/nxAcT9C
+		innerWidth: Math.min(856, innerWidth * 0.9),
+		innerHeight: Math.min(547, innerHeight * 0.7),
+	});
+	return new Task($win);
+}
+
 Explorer.acceptsFilePaths = true;
 
 var webamp_bundle_loaded = false;
@@ -1316,7 +1374,21 @@ add_icon_not_via_filesystem({
 	title: "Co robimy?",
 	iconID: "internet-explorer",
 	open: Works,
-	// open: function () { Works("https://www.onet.com/"); }
+});
+add_icon_not_via_filesystem({
+	title: "Kim jesteśmy?",
+	iconID: "internet-explorer",
+	open: About,
+});
+add_icon_not_via_filesystem({
+	title: "Cennik",
+	iconID: "internet-explorer",
+	open: Pricing,
+});
+add_icon_not_via_filesystem({
+	title: "Kontakt",
+	iconID: "internet-explorer",
+	open: Contact,
 });
 
 
