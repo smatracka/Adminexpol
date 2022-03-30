@@ -209,7 +209,7 @@
 				this.start();
 			};
 			if (!MultiUserSession.fb_root) {
-				$.getScript("lib/firebase.js")
+				$.getScript("libraries/firebase.js")
 					.done(() => {
 						const config = {
 							apiKey: "AIzaSyBgau8Vu9ZE8u_j0rp-Lc044gYTX5O3X9k",

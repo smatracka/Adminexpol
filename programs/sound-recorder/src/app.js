@@ -85,7 +85,7 @@ if (query.path) {
 var get_wav_file = function (file, callback) {
 	file.updateBufferSize(file.length);
 
-	var worker = new Worker("lib/recorderWorker.js");
+	var worker = new Worker("libraries/recorderWorker.js");
 
 	worker.postMessage({
 		command: "init",

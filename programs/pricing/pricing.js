@@ -696,8 +696,8 @@ ${doc.documentElement.outerHTML}`;
 						$(this.shadowRoot).append(`
 							<link href="/layout.css" rel="stylesheet" type="text/css">
 							<link href="/classic.css" rel="stylesheet" type="text/css">
-							<link href="/lib/os-gui/layout.css" rel="stylesheet" type="text/css">
-							<link href="/lib/os-gui/windows-98.css" rel="stylesheet" type="text/css">
+							<link href="/libraries/os-gui/layout.css" rel="stylesheet" type="text/css">
+							<link href="/libraries/os-gui/windows-98.css" rel="stylesheet" type="text/css">
 							<style>
 								:host {
 									display: flex;
@@ -845,11 +845,11 @@ ${doc.documentElement.outerHTML}`;
 	const head_end_injected_html = `
 		<link href="/layout.css" rel="stylesheet" type="text/css">
 		<link href="/classic.css" rel="stylesheet" type="text/css">
-		<link href="/lib/os-gui/layout.css" rel="stylesheet" type="text/css">
-		<link href="/lib/os-gui/windows-98.css" rel="stylesheet" type="text/css">
+		<link href="/libraries/os-gui/layout.css" rel="stylesheet" type="text/css">
+		<link href="/libraries/os-gui/windows-98.css" rel="stylesheet" type="text/css">
 		<meta name="viewport" content="width=device-width, user-scalable=no">
-		<script src="/lib/jquery.min.js"></script>
-		<script src="/lib/os-gui/$Window.js"></script>
+		<script src="/libraries/jquery.min.js"></script>
+		<script src="/libraries/os-gui/$Window.js"></script>
 		<script src="/src/msgbox.js"></script>
 		<script>defaultMessageBoxTitle = "Explorer";</script>
 		<script>
