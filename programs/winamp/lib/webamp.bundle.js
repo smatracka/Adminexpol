@@ -4748,7 +4748,7 @@ function pack(str, buffer, index=0) {
   return index;
 }
 
-// CONCATENATED MODULE: /Users/jordaneldredge/projects/webamp/node_modules/byte-data/lib/int-parser.js
+// CONCATENATED MODULE: /Users/jordaneldredge/projects/webamp/node_modules/byte-data/libraries/int-parser.js
 /*
  * Copyright (c) 2017-2018 Rafael da Silva Rocha.
  *
@@ -10214,7 +10214,7 @@ function media_getSerializedState(state) {
   };
 }
 /* harmony default export */ var reducers_media = (media_media);
-// EXTERNAL MODULE: /Users/jordaneldredge/projects/webamp/node_modules/reselect/lib/index.js
+// EXTERNAL MODULE: /Users/jordaneldredge/projects/webamp/node_modules/reselect/libraries/index.js
 var lib = __webpack_require__(3);
 
 // CONCATENATED MODULE: ./js/reducers/display.ts
@@ -15709,7 +15709,7 @@ const compose = Object(redux_devtools_extension["composeWithDevTools"])({
   const store = initialState ? Object(redux["createStore"])(reducers, initialState, enhancer) : Object(redux["createStore"])(reducers, enhancer);
   return store;
 });
-// EXTERNAL MODULE: /Users/jordaneldredge/projects/webamp/node_modules/fscreen/lib/index.js
+// EXTERNAL MODULE: /Users/jordaneldredge/projects/webamp/node_modules/fscreen/libraries/index.js
 var fscreen_lib = __webpack_require__(13);
 var fscreen_lib_default = /*#__PURE__*/__webpack_require__.n(fscreen_lib);
 

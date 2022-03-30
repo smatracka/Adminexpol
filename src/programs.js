@@ -702,10 +702,10 @@ var load_winamp_bundle_if_not_loaded = function (includeButterchurn, callback) {
 		callback();
 	} else {
 		// TODO: parallelize (if possible)
-		$.getScript("programs/winamp/lib/webamp.bundle.min.js", () => {
+		$.getScript("programs/winamp/libraries/webamp.bundle.min.js", () => {
 			if (includeButterchurn) {
-				$.getScript("programs/winamp/lib/butterchurn.min.js", () => {
-					$.getScript("programs/winamp/lib/butterchurnPresets.min.js", () => {
+				$.getScript("programs/winamp/libraries/butterchurn.min.js", () => {
+					$.getScript("programs/winamp/libraries/butterchurnPresets.min.js", () => {
 						callback();
 					});
 				});
@@ -1105,7 +1105,7 @@ var file_extension_associations = {
 	// - dll (Dynamic Link Library)
 	// - exe (Executable file)
 	// - a (static library)
-	// - lib (static library)
+	// - libraries (static library)
 	// - pdb (Program Debug database)
 	// - idb (Intermediate Debug file)
 	// - bcmap (Binary Character Map)

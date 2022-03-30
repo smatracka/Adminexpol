@@ -9,27 +9,27 @@ const copy = (from, toDir) => {
 	copySync(from, to);
 };
 
-copy("node_modules/os-gui/build/windows-98.css", "lib/os-gui/");
-copy("node_modules/os-gui/build/windows-98.css.map", "lib/os-gui/");
-copy("node_modules/os-gui/build/layout.css", "lib/os-gui/");
-copy("node_modules/os-gui/build/layout.css.map", "lib/os-gui/");
-copy("node_modules/os-gui/build/windows-default.css", "lib/os-gui/");
-copy("node_modules/os-gui/build/windows-default.css.map", "lib/os-gui/");
-copy("node_modules/os-gui/build/peggys-pastels.css", "lib/os-gui/");
-copy("node_modules/os-gui/build/peggys-pastels.css.map", "lib/os-gui/");
-copy("node_modules/os-gui/parse-theme.js", "lib/os-gui/");
-copy("node_modules/os-gui/$MenuBar.js", "lib/os-gui/");
-copy("node_modules/os-gui/MenuBar.js", "lib/os-gui/");
-copy("node_modules/os-gui/$Window.js", "lib/os-gui/");
-copy("node_modules/browserfs/dist/browserfs.js", "lib/");
-copy("node_modules/browserfs/dist/browserfs.js.map", "lib/");
-copy("node_modules/browserfs/dist/browserfs.min.js", "lib/");
-copy("node_modules/browserfs/dist/browserfs.min.js.map", "lib/");
-// copy("node_modules/webamp/built/webamp.bundle.js", "programs/winamp/lib/");
-// copy("node_modules/webamp/built/webamp.bundle.min.js", "programs/winamp/lib/");
-// copy("node_modules/webamp/built/webamp.bundle.min.js.map", "programs/winamp/lib/");
-copy("node_modules/butterchurn/lib/butterchurn.min.js", "programs/winamp/lib/");
-copy("node_modules/butterchurn-presets/lib/butterchurnPresets.min.js", "programs/winamp/lib/");
+copy("node_modules/os-gui/build/windows-98.css", "libraries/os-gui/");
+copy("node_modules/os-gui/build/windows-98.css.map", "libraries/os-gui/");
+copy("node_modules/os-gui/build/layout.css", "libraries/os-gui/");
+copy("node_modules/os-gui/build/layout.css.map", "libraries/os-gui/");
+copy("node_modules/os-gui/build/windows-default.css", "libraries/os-gui/");
+copy("node_modules/os-gui/build/windows-default.css.map", "libraries/os-gui/");
+copy("node_modules/os-gui/build/peggys-pastels.css", "libraries/os-gui/");
+copy("node_modules/os-gui/build/peggys-pastels.css.map", "libraries/os-gui/");
+copy("node_modules/os-gui/parse-theme.js", "libraries/os-gui/");
+copy("node_modules/os-gui/$MenuBar.js", "libraries/os-gui/");
+copy("node_modules/os-gui/MenuBar.js", "libraries/os-gui/");
+copy("node_modules/os-gui/$Window.js", "libraries/os-gui/");
+copy("node_modules/browserfs/dist/browserfs.js", "libraries/");
+copy("node_modules/browserfs/dist/browserfs.js.map", "libraries/");
+copy("node_modules/browserfs/dist/browserfs.min.js", "libraries/");
+copy("node_modules/browserfs/dist/browserfs.min.js.map", "libraries/");
+// copy("node_modules/webamp/built/webamp.bundle.js", "programs/winamp/libraries/");
+// copy("node_modules/webamp/built/webamp.bundle.min.js", "programs/winamp/libraries/");
+// copy("node_modules/webamp/built/webamp.bundle.min.js.map", "programs/winamp/libraries/");
+copy("node_modules/butterchurn/libraries/butterchurn.min.js", "programs/winamp/libraries/");
+copy("node_modules/butterchurn-presets/libraries/butterchurnPresets.min.js", "programs/winamp/libraries/");
 
 const copy_and_monkey_patch_webamp = (file_name) => {
 	const from = `node_modules/webamp/built/${file_name}`;

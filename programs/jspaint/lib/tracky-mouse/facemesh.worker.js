@@ -1,6 +1,6 @@
 
-importScripts('lib/tf.js');
-importScripts('lib/facemesh/facemesh.js');
+importScripts('libraries/tf.js');
+importScripts('libraries/facemesh/facemesh.js');
 
 // Don't use CPU backend for facemesh.
 // It's too slow to be useful, without advanced time travel technology. (I have dabbled in time travel, but not cracked it.)

@@ -1560,7 +1560,7 @@ function render_history_as_gif(){
 		const height = main_canvas.height;
 		const gif = new GIF({
 			//workers: Math.min(5, Math.floor(undos.length/50)+1),
-			workerScript: "lib/gif.js/gif.worker.js",
+			workerScript: "libraries/gif.js/gif.worker.js",
 			width,
 			height,
 		});
@@ -3435,13 +3435,13 @@ function read_image_file(blob, callback) {
 
 			const pdfjs = window['pdfjs-dist/build/pdf'];
 			
-			pdfjs.GlobalWorkerOptions.workerSrc = 'lib/pdf.js/build/pdf.worker.js';
+			pdfjs.GlobalWorkerOptions.workerSrc = 'libraries/pdf.js/build/pdf.worker.js';
 
 			const file_bytes = new Uint8Array(arrayBuffer);
 
 			const loadingTask = pdfjs.getDocument({
 				data: file_bytes,
-				cMapUrl: "lib/pdf.js/web/cmaps/",
+				cMapUrl: "libraries/pdf.js/web/cmaps/",
 				cMapPacked: true,
 			});
 

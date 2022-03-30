@@ -1579,7 +1579,7 @@ var tracky_mouse_deps_promise;
 async function init_eye_gaze_mode() {
 	if (enable_tracky_mouse) {
 		if (!tracky_mouse_deps_promise) {
-			TrackyMouse.dependenciesRoot = "lib/tracky-mouse";
+			TrackyMouse.dependenciesRoot = "libraries/tracky-mouse";
 			tracky_mouse_deps_promise = TrackyMouse.loadDependencies();
 		}
 		await tracky_mouse_deps_promise;

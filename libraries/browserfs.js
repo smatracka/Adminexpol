@@ -591,7 +591,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	/**
 	 * converts Date or number to a fractional UNIX timestamp
-	 * Grabbed from NodeJS sources (lib/fs.js)
+	 * Grabbed from NodeJS sources (libraries/fs.js)
 	 */
 	FS.prototype._toUnixTimestamp = function _toUnixTimestamp (time) {
 	    if (typeof time === 'number') {
