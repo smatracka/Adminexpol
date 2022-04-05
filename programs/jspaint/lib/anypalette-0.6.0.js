@@ -4914,11 +4914,11 @@ var EE = require('events').EventEmitter;
 var inherits = require('inherits');
 
 inherits(Stream, EE);
-Stream.Readable = require('readable-stream/lib/_stream_readable.js');
-Stream.Writable = require('readable-stream/lib/_stream_writable.js');
-Stream.Duplex = require('readable-stream/lib/_stream_duplex.js');
-Stream.Transform = require('readable-stream/lib/_stream_transform.js');
-Stream.PassThrough = require('readable-stream/lib/_stream_passthrough.js');
+Stream.Readable = require('readable-stream/libraries/_stream_readable.js');
+Stream.Writable = require('readable-stream/libraries/_stream_writable.js');
+Stream.Duplex = require('readable-stream/libraries/_stream_duplex.js');
+Stream.Transform = require('readable-stream/libraries/_stream_transform.js');
+Stream.PassThrough = require('readable-stream/libraries/_stream_passthrough.js');
 Stream.finished = require('readable-stream/libraries/internal/streams/end-of-stream.js')
 Stream.pipeline = require('readable-stream/libraries/internal/streams/pipeline.js')
 
