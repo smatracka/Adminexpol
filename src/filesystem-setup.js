@@ -51,15 +51,15 @@ BrowserFS.configure({
 	}
 	__fs_waiting_callbacks = [];
 });
-
-setTimeout(function () {
-	__fs_timed_out = true;
-	if (__fs_waiting_callbacks.length) {
-		// TODO: DRY (can probably simplify this logic significantly)
-		alert("The filesystem is not working.");
-	}
-	__fs_waiting_callbacks = [];
-}, 5000);
+//
+// setTimeout(function () {
+// 	__fs_timed_out = true;
+// 	if (__fs_waiting_callbacks.length) {
+// 		// TODO: DRY (can probably simplify this logic significantly)
+// 		alert("The filesystem is not working.");
+// 	}
+// 	__fs_waiting_callbacks = [];
+// }, 5000);
 
 function withFilesystem(callback) {
 	if (__fs_initialized) {
